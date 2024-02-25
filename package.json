@@ -1,0 +1,31 @@
+{
+  "name": "RahulCAPM",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/ux-specification": "^1.120.4"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-mockdataap": "cds watch --open mockdataap/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/mockdataap"
+  ],
+  "cds": {
+    "requires": {
+      "API_salesorder_srv": {
+        "kind": "odata",
+        "model": "srv/external/API_salesorder_srv"
+      }
+    }
+  }
+}

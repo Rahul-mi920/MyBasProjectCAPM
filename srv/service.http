@@ -1,0 +1,13 @@
+GET http://localhost:4004/sap/opu/odata/sap/API_mock_data/Dataset?$top=2&$filter=first_name eq 'Diena'
+
+###
+POST http://localhost:4004/sap/opu/odata/sap/API_mock_data/Dataset
+Content-Type: application/json
+
+{"ID":1001,
+  "first_name":"Diena",
+  "last_name":"karma",
+  "email":"dkarma@vinaora.com",
+  "gender":"Female",
+  "ip_address":"94.152.120.523"
+}
